@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I'm a first-year Computer Science student at De Anza College, on a transfer track toward a CS/Statistics
+    program at a UC school. I'm interested in machine learning, software engineering, and applied research,
+    with hands-on project experience in gesture recognition and hardware design. I'm also pursuing pre-med
+    as a parallel goal.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Associate's Degree in Computer Science (in progress)"
+      subtitle="2025 to present at De Anza College, Cupertino, USA"
+    />
+    <TimeLineElement
+      title="High School Diploma"
+      subtitle="2021 to 2025 at Mission San Jose High School, Fremont, USA"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Software Engineering Practicum Intern at ThinkNeuro"
+      subtitle="Summer 2026 (SRIP Track 2), Remote"
+    >
+      Learning core software engineering workflows including Git, GitHub, branching, and pull requests, and
+      building a personal portfolio website as a practicum deliverable.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Independent Research Outreach"
+      subtitle="2026, De Anza College"
+    >
+      Reached out to professors across multiple universities to pursue research opportunities in machine
+      learning and applied CS, resulting in interest and offers from labs at UC Santa Cruz and Cal State
+      East Bay.
+    </TimeLineElement>
+    <TimeLineElement
+      title="ASL Gesture Recognition Project"
+      subtitle="2025 to 2026, Independent Project"
+    >
+      Designed and built a real-time American Sign Language gesture recognition system using MediaPipe,
+      LSTM, TensorFlow, and OpenCV. Published the project on Medium and GitHub.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> MIT Beaver Works Summer Institute, ASICs</a>
+    </li>
+    <li>
+      <a href="https://github.com/Aditya510730/asl-gesture-recognition" target="_blank"> ASL Gesture Recognition (GitHub Project)</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Python</li>
+    <li>C++</li>
+    <li>Git & GitHub</li>
+    <li>TensorFlow</li>
+    <li>OpenCV</li>
+    <li>MediaPipe</li>
+    <li>Machine Learning</li>
+    <li>Data Structures</li>
+    <li>Linear Algebra</li>
+    <li>Statistics</li>
+    <li>Astro</li>
+    <li>HTML/CSS</li>
+    <li>Lightroom</li>
+    <li>Photography</li>
+  </ul>
+</BaseLayout>

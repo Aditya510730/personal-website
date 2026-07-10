@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Machine Learning & Hardware</div>
+  </div>
+
+  <HorizontalCard
+    title="ASL Gesture Recognition"
+    img="/post_img.webp"
+    desc="A real-time American Sign Language gesture recognition system built with MediaPipe, LSTM, TensorFlow, and OpenCV. Published on Medium and GitHub."
+    url="https://github.com/Aditya510730/asl-gesture-recognition"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="8-Bit Computer Build"
+    img="/post_img.webp"
+    desc="A from-scratch 8-bit computer build, exploring digital logic gates, memory circuits, and instruction execution at the hardware level."
+    url="#"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">In Progress</div>
+  </div>
+
+  <HorizontalCard
+    title="Language Learning App"
+    img="/post_img.webp"
+    desc="An app in development for language learning, combining software engineering fundamentals with practical educational design."
+    url="#"
+    badge="IN PROGRESS"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Personal Website"
+    img="/post_img.webp"
+    desc="This site, built as part of the ThinkNeuro Software Engineering Practicum to practice Git, GitHub workflows, and web development."
+    url="#"
+  />
+</BaseLayout>
